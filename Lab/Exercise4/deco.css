@@ -1,0 +1,14 @@
+body {
+    background-color: bisque;
+}
+
+#border {
+    background-color: brown;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32pt;
+    padding: 100;
+    border-width: 10px;
+    border-style: solid;
+    border-color: black;
+}

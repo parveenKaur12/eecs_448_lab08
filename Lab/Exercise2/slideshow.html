@@ -1,0 +1,30 @@
+<html>
+<link rel="stylesheet" href="deco.css">
+<script type="text/javascript" src="rotatepics.js"></script>
+
+<body>
+
+    <h1>SLIDESHOW</h1>
+    <div> <img id="red_logo" src="images/red.png" alt="red!">
+        <div> <img id="daisy_logo" src="images/daisy.png" alt="daisy!">
+            <div> <img id="pink_logo" src="images/pink.png" alt="pink!">
+                <div> <img id="tulips_logo" src="images/tulips.png" alt="tulips!">
+                    <div> <img id="sunflower_logo" src="images/sunflower.png" alt="sunflower!">
+                    </div>
+                    <button id="buttonLeft" onclick="goleft();">Previous</button>
+                    <button id="buttonRight" onclick="goRight();">Next</button>
+                    <script>
+                        let pictureArray = [document.getElementById("red_logo"),
+                            document.getElementById("daisy_logo"),
+                            document.getElementById("pink_logo"),
+                            document.getElementById("tulips_logo"),
+                            document.getElementById("sunflower_logo")
+                        ];
+                        for (let i = 0; i < 5; i++) {
+                            pictureArray[i].style.display = "none";
+                        }
+                        pictureArray[0].style.display = "";
+                    </script>
+</body>
+
+</html>
